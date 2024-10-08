@@ -1,277 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>home page</title>
-    <style>
-      /* font imports */
-      @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap");
 
-      @import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>home page</title>
+  <style>
+    /* font imports */
+    @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap");
+
+    @import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
 
 
-      /* universal css */
-      * {
-        margin: 0;
-        padding: 0;
-        
+    /* universal css */
+    * {
+      margin: 0;
+      padding: 0;
 
-        /* overflow-x: hidden; */
-        /* box-sizing: border-box; */
-      }
 
-      /* first paralax and navbar  */
-      .mainthing{
-        height: 100vh;
-      }
+      /* overflow-x: hidden; */
+      /* box-sizing: border-box; */
+    }
 
-      .navbar {
-        padding: 20px;
-        background-color: rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(30px);
-        color: white;
+    /* first paralax and navbar  */
+    .mainthing {
+      height: 100vh;
+    }
 
-        display: flex;
-        justify-content: space-between;   
-        margin: auto;
+    .navbar {
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(30px);
+      color: white;
 
-        position: sticky;
-        top: 0;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
 
-        z-index: 2;
-        font-family: "Playwrite DE Grund", cursive;
-        /* font-family: "Raleway", sans-serif; */
-        font-optical-sizing: auto;
-        font-weight: 600;
-      }
-      .navl {
-        display: flex;
-        padding-top: 12px;
-        padding-right: 12px;
-      }
+      position: sticky;
+      top: 0;
 
-      .navlist {
-        list-style: none;
-        padding-left: 20px;
-        
-      }
-      .a1 {
-        text-decoration: none;
-        color: white;
-      }
-      .home{
-        color: rgb(255, 181, 97);
-      }
-      .logosvg {
-        width: 50px;
-        height: 50px;
-        padding-right: 10px;
-        position: relative;
-      }
+      z-index: 2;
+      font-family: "Playwrite DE Grund", cursive;
+      /* font-family: "Raleway", sans-serif; */
+      font-optical-sizing: auto;
+      font-weight: 600;
+    }
 
-      .logo {
-        font-size: 30px;
-      }
+    .navl {
+      display: flex;
+      padding-top: 12px;
+      padding-right: 12px;
+    }
 
-      .ahead {
-        display: flex;
-      }
+    .navlist {
+      list-style: none;
+      padding-left: 20px;
 
-      .behind {
-        display: flex;
-      }
-      .sbr {
-        position: relative;
-        left: 10px;
-        top: 8px;
-      }
-      .sarea {
-        margin-left:  20px;
-        width: 290px;
-        height: 30px;
-        border-radius: 10px;
-        font-family: "Playwrite DE Grund", cursive;
-      }
-      .sbut {
-        position: relative;
-        top: 2px;
+    }
 
-        width: 105px;
-        height: 30px;
-        background-color: rgb(255, 181, 97);
-        border: 2px solid rgb(255, 181, 97);
-        border-radius: 10px;
-        font-family: "Playwrite DE Grund", cursive;
-      }
+    .a1 {
+      text-decoration: none;
+      color: white;
+    }
 
-      .login {
-        position: relative;
-        left: 10px;
-        top: 10px;
-      }
-      .logbut {
-        margin-right:10px ;
-        width: 105px;
-        height: 30px;
-        background-color: rgb(255, 181, 97);
-        border: 2px solid rgb(255, 181, 97);
-        border-radius: 10px;
-        font-family: "Playwrite DE Grund", cursive;
-      }
+    .home {
+      color: rgb(255, 181, 97);
+    }
 
-      .parallax {
-        /* background-image: url("map.jpg"); */
+    .logosvg {
+      width: 50px;
+      height: 50px;
+      padding-right: 10px;
+      position: relative;
+    }
 
-        background-image: url("imp.jpg");
-        height: 100vh;
-        width: 100%;
-        position: relative;
+    .logo {
+      font-size: 30px;
+    }
 
-        top: -410px;
+    .ahead {
+      display: flex;
+    }
 
-        /* Create the parallax scrolling effect */
+    .behind {
+      display: flex;
+    }
 
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+    .sbr {
+      position: relative;
+      left: 10px;
+      top: 8px;
+    }
 
-      /* heading text  */
+    .sarea {
+      margin-left: 20px;
+      width: 290px;
+      height: 30px;
+      border-radius: 10px;
+      font-family: "Playwrite DE Grund", cursive;
+    }
 
-      .cont {
-        width: 80vw;
-        margin: auto;
-        position: relative;
-        z-index: 1;
-        text-align: center;
-        left: 35px;
-        top: 150px;
+    .sbut {
+      position: relative;
+      top: 2px;
 
-        font-weight: 500;
-        font-size: 25px;
-        font-family: "Protest Strike", sans-serif;
+      width: 105px;
+      height: 30px;
+      background-color: rgb(255, 181, 97);
+      border: 2px solid rgb(255, 181, 97);
+      border-radius: 10px;
+      font-family: "Playwrite DE Grund", cursive;
+    }
 
-        color: transparent;
-        background-image: url("map.jpg"); /* Add your world map image path here */
-        background-size: cover;
-        background-clip: text;
-        /* -webkit-background-clip: text;   */
-      }
+    .login {
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
 
-      .text {
-        font-weight: bolder;
-        font-size: 120px;
+    .logbut {
+      margin-right: 10px;
+      width: 105px;
+      height: 30px;
+      background-color: rgb(255, 181, 97);
+      border: 2px solid rgb(255, 181, 97);
+      border-radius: 10px;
+      font-family: "Playwrite DE Grund", cursive;
+    }
 
-        color: transparent;
-        background-image: url("map.jpg");
-        background-size: cover;
-        background-clip: text;
-        /* -webkit-background-clip: text; */
+    .parallax {
+      /* background-image: url("map.jpg"); */
 
-        position: relative;
-        display: inline-block;
+      background-image: url("imp.jpg");
+      height: 100vh;
+      width: 100%;
+      position: relative;
 
-        /* Creating the 3D Shadow Effect */
-        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3),
-          6px 6px 10px rgba(0, 0, 0, 0.1), 9px 9px 15px rgba(0, 0, 0, 0.1);
-      }
+      top: -410px;
 
-      .text::before {
-        content: "WORLD";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        color: rgba(0, 0, 0, 0.2);
-        z-index: -1;
-        /* transform: translate(10px, 10px); Offset to create the depth illusion */
-      }
+      /* Create the parallax scrolling effect */
 
-      .Countries{
-        height: 900px;
-        border: 2px solid black;
-        width: 100vw;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-      }
-     
-    </style>
-  </head>
-  <body>
-    <!-- nav bar and paralaxx -->
-    <div class="mainthing">
-      <div class="navbar">
-        <div class="ahead">
-          <img
-            src="reshot-icon-tent-X4ND973UCT.svg"
-            class="logosvg"
-            alt="logo svg"
-          />
+    /* heading text  */
 
-          <div class="logo">Indie Delights</div>
+    .cont {
+      width: 80vw;
+      margin: auto;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      left: 35px;
+      top: 150px;
 
-          <div class="sbr">
-            <input class="sarea" type="text" placeholder="   Type here..." />
-            <button class="sbut" type="submit">Search</button>
-          </div>
-        </div>
+      font-weight: 500;
+      font-size: 25px;
+      font-family: "Protest Strike", sans-serif;
 
-        <div class="behind">
-          <ul class="navl">
-            <li class="navlist">
-              <a
-                class="a1 home"
-                href="http://127.0.0.1:3000/web projects/mini projects/clg web pro/landingpage.html"
-                >Home</a
-              >
-            </li>
-            <li class="navlist"><a class="a1" href="">Countries</a></li>
-            <li class="navlist"><a class="a1" href="http://127.0.0.1:3000/web projects/mini projects/clg web pro/aboutuspage.html">About Us</a></li>
-            <!-- <li class="navlist"><a class="a1" href="">Contact</a></li> -->
-          </ul>
+      color: transparent;
+      background-image: url("map.jpg");
+      /* Add your world map image path here */
+      background-size: cover;
+      background-clip: text;
+      /* -webkit-background-clip: text;   */
+    }
 
-          <div class="login">
-            <a href="http://127.0.0.1:5500/login2.html"><button class="logbut">Login/Signup</button></a>
-          </div>
+    .text {
+      font-weight: bolder;
+      font-size: 120px;
+
+      color: transparent;
+      background-image: url("map.jpg");
+      background-size: cover;
+      background-clip: text;
+      /* -webkit-background-clip: text; */
+
+      position: relative;
+      display: inline-block;
+
+      /* Creating the 3D Shadow Effect */
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3),
+        6px 6px 10px rgba(0, 0, 0, 0.1), 9px 9px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .text::before {
+      content: "WORLD";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: rgba(0, 0, 0, 0.2);
+      z-index: -1;
+      /* transform: translate(10px, 10px); Offset to create the depth illusion */
+    }
+
+    .Countries {
+      height: 900px;
+      border: 2px solid black;
+      width: 100vw;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- nav bar and paralaxx -->
+  <div class="mainthing">
+    <div class="navbar">
+      <div class="ahead">
+        <img src="reshot-icon-tent-X4ND973UCT.svg" class="logosvg" alt="logo svg" />
+
+        <div class="logo">Indie Delights</div>
+
+        <div class="sbr">
+          <input class="sarea" type="text" placeholder="   Type here..." />
+          <button class="sbut" type="submit">Search</button>
         </div>
       </div>
 
-      <!-- heading content  -->
+      <div class="behind">
+        <ul class="navl">
+          <li class="navlist">
+            <a class="a1 home"
+              href="http://127.0.0.1:3000/web projects/mini projects/clg web pro/landingpage.html">Home</a>
+          </li>
+          <li class="navlist"><a class="a1" href="">Countries</a></li>
+          <li class="navlist"><a class="a1"
+              href="http://127.0.0.1:3000/web projects/mini projects/clg web pro/aboutuspage.html">About Us</a></li>
+          <!-- <li class="navlist"><a class="a1" href="">Contact</a></li> -->
+        </ul>
 
-      <div class="cont">
-        <h1 class="text">
-          INDIE <br />
-          DELIGHTS
-        </h1>
-        <br />
-        <span class="p1">The more you travel The more you feel!</span>
-      </div>
-
-      <div class="parallax"></div>
-    </div>
-
-    <!-- <div class="line">1</div> -->
-
-    <!-- other -->
-
-
-    <div class="Countries">
-      <h1>Countries</h1>
-      <div class="india">
-        <h3>India</h3>
-      </div>
-      <div class="America">
-        <h3>America</h3>
-      </div>
-      <div class="Europe">
-        <h3>Europe</h3>
-      </div>
-      <div class="Australia">
-        <h3>Australia</h3>
+        <div class="login">
+          <a href="http://127.0.0.1:5500/login2.html"><button class="logbut">Login/Signup</button></a>
+        </div>
       </div>
     </div>
-  </body>
+
+    <!-- heading content  -->
+
+    <div class="cont">
+      <h1 class="text">
+        INDIE <br />
+        DELIGHTS
+      </h1>
+      <br />
+      <span class="p1">The more you travel The more you feel!</span>
+    </div>
+
+    <div class="parallax"></div>
+  </div>
+
+  <div class="line">1</div>
+
+
+
+
+  <div class="Countries">
+    <h1>Countries</h1>
+    <div class="india">
+      <h3>India</h3>
+    </div>
+    <div class="America">
+      <h3>America</h3>
+    </div>
+    <div class="Europe">
+      <h3>Europe</h3>
+    </div>
+    <div class="Australia">
+      <h3>Australia</h3>
+    </div>
+  </div>
+</body>
+
 </html>
